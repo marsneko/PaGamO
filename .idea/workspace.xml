@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6687aa10-6853-49b0-bb11-9913441b8e55" name="Changes" comment="first commit">
+    <list default="true" id="6687aa10-6853-49b0-bb11-9913441b8e55" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/PaGamO.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processed/session_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/question_structure.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_book_volume_log.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_user_answer_log.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_user_info.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_book_volume_log_2025-06-03.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_user_answer_log_2025-06-03.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_user_info_2025-06-03.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/answer-logs/target_user_answer_log.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/answer-logs/target_user_answer_log_2025-06-03.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/experiment-logs/target_book_volume_log.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/experiment-logs/target_book_volume_log_2025-06-03.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/pagamo-data.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/question-structures/question_structure.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/user-infos/target_user_info.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/user-infos/target_user_info_2025-06-03.parquet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +169,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
