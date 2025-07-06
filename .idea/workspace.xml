@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6687aa10-6853-49b0-bb11-9913441b8e55" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/PaGamO.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/processed/session_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/question_structure.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_book_volume_log.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_user_answer_log.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_user_info.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_book_volume_log_2025-06-03.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_user_answer_log_2025-06-03.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_user_info_2025-06-03.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/answer-logs/target_user_answer_log.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/answer-logs/target_user_answer_log_2025-06-03.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/experiment-logs/target_book_volume_log.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/experiment-logs/target_book_volume_log_2025-06-03.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/pagamo-data.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/question-structures/question_structure.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/user-infos/target_user_info.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/user-infos/target_user_info_2025-06-03.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "marsneko"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/marsneko/PaGamO.git",
+    "accountId": "d0092cb0-a8d6-41c4-8a36-3e24fcbd97a0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2zFspwd5f1XjdutKLQ80Vzpr5c6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.01-insert-data.executor": "Debug",
+    "Python.04-naive-session.executor": "Debug",
+    "Python.preprocess.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "settings.sync"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "duckdb"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/analyze" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.preprocess">
+    <configuration name="01-insert-data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PaGamO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script/already exists" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/already exists/01-insert-data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04-naive-session" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PaGamO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script/already exists" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/already exists/04-naive-session.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PaGamO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analyze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze/preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.preprocess" />
+        <item itemvalue="Python.01-insert-data" />
+        <item itemvalue="Python.04-naive-session" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-47c6639f9d67-99d813433b97-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-251.25410.158" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6687aa10-6853-49b0-bb11-9913441b8e55" name="Changes" comment="" />
+      <created>1751338341694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751338341694</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/script/already exists/01-insert-data.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/script/already exists/01-insert-data.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/analyze/analyze.ipynb</url>
+          <line>211</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
