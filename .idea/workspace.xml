@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6687aa10-6853-49b0-bb11-9913441b8e55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PaGamO.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6687aa10-6853-49b0-bb11-9913441b8e55" name="Changes" comment="Untrack the files in .gitignore">
+      <change afterPath="$PROJECT_DIR$/.idea/rAvailablePackageCache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rpackages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze/analyze.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analyze/analyze.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze/preprocess.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analyze/preprocess.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/results/5th_grade_agg.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/results/5th_grade_agg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/results/5th_grades.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/results/5th_grades.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,24 +27,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="R Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "marsneko"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;marsneko&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/marsneko/PaGamO.git",
-    "accountId": "d0092cb0-a8d6-41c4-8a36-3e24fcbd97a0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/marsneko/PaGamO.git&quot;,
+    &quot;accountId&quot;: &quot;d0092cb0-a8d6-41c4-8a36-3e24fcbd97a0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -50,11 +64,16 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.01-insert-data.executor": "Debug",
     "Python.04-naive-session.executor": "Debug",
+    "Python.analyze.executor": "Run",
     "Python.preprocess.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "settings.sync"
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "database.data.extractors.current.export.id": "Excel (xlsx)",
+    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
+    "git-widget-placeholder": "0603__ver",
+    "last_opened_file_path": "/Users/eric/Documents/SchoolCourses/PaGamO/data/raw",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -63,7 +82,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/raw" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/raw/experiment-2025-q1/ntuecon_experiment_250603" />
       <recent name="$PROJECT_DIR$/analyze" />
     </key>
   </component>
@@ -112,11 +135,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="analyze" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PaGamO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analyze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze/analyze.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PaGamO" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analyze" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -134,6 +182,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.preprocess" />
+        <item itemvalue="Python.analyze" />
         <item itemvalue="Python.01-insert-data" />
         <item itemvalue="Python.04-naive-session" />
       </list>
@@ -142,7 +191,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-47c6639f9d67-99d813433b97-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-251.25410.158" />
+        <option value="bundled-python-sdk-2e738b810fe0-05660e73b189-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-251.26927.91" />
       </set>
     </attachedChunks>
   </component>
@@ -156,12 +205,52 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="0603_ver" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -170,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+    <MESSAGE value="Untrack the files in .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Untrack the files in .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -184,11 +274,6 @@
           <url>file://$PROJECT_DIR$/script/already exists/01-insert-data.py</url>
           <line>114</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/analyze/analyze.ipynb</url>
-          <line>211</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
