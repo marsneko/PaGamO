@@ -8,4 +8,4 @@
 /dataSources.local.xml
 *.parquet
 *.db
-*.xml
+*.xml.idea/

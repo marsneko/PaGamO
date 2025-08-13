@@ -51,11 +51,12 @@ import statistics
 #
 def extend_answer_df(ans_df: pd.DataFrame,user_df: pd.DataFrame, exp_df: pd.DataFrame,
                      question_df: pd.DataFrame, course_df: pd.DataFrame):
-    exp_df = exp_df[['id','experiment_index']]
+    exp_df = exp_df[['user_id','gamecharacter_id','section_id','experiment_index']]
+    exp_df.drop_duplicates(['user_id','gamecharacter_id','section_id'],inplace=True)
     question_df = question_df.drop('section_id',axis='columns')
 
     df = pd.merge(ans_df, user_df, how='left',on='user_id' )
-    df = pd.merge(df, exp_df, how="left", on=['id'] )
+    df = pd.merge(df, exp_df, how="left", on=['user_id','gamecharacter_id','section_id'] )
     df = pd.merge(df, question_df, how='left', on='question_id')
     df = pd.merge(df, course_df, how='left', on='gamecharacter_id')
 
@@ -63,10 +64,11 @@ def extend_answer_df(ans_df: pd.DataFrame,user_df: pd.DataFrame, exp_df: pd.Data
 def filter_exp_data(df:pd.DataFrame, grade:int = 5, subject:str = "數學", vol_name:str = '五', course_ids=None):
 
     grade_mask = df['user_grade'] == grade
-    session_mask = pd.Series(False,index=df.index)
+    session_mask = pd.Series(True,index=df.index)
     if course_ids is None:
         pass
     else:
+        session_mask = pd.Series(False, index=df.index)
         for _id in course_ids:
             session_mask |= df['course_id'] == _id
     subject_mask = df['subject_name'] == subject
@@ -96,7 +98,7 @@ def manual_translate_book_vol_name_to_book_vol(df:pd.DataFrame, colname:str = 'b
 def construct_session_id(df:pd.DataFrame):
     df.loc[:,'created_at'] = pd.to_datetime(df['created_at_utc8'], errors = 'coerce')
     df.sort_values(by = ['created_at'],inplace=True)
-    df.loc[:,'prev_time'] = df.groupby(['user_id','gamecharacter_id','section_id'])['created_at'].shift(1)
+    df.loc[:,'prev_time'] = df.groupby(['user_id','gamecharacter_id'])['created_at'].shift(1)
     df.loc[:,'time_diff'] = (df['created_at'] - df['prev_time']).dt.total_seconds()
     df.loc[:,'new_session_flag'] = ((df['time_diff'].copy() > 30*60 ) | df['time_diff'].copy().isna()).astype(int)
     df.loc[:,'session_id'] = df.groupby("user_id")["new_session_flag"].cumsum()
@@ -119,7 +121,8 @@ def agg_sessions(df:pd.DataFrame) -> pd.DataFrame:
         'book_volume_name':list,
         'is_self_selected':list,
         'manual_book_vol':list,
-        'time_diff':list
+        'time_diff':list,
+        'created_at_utc8':list
     })
     session_df.loc[:,'start_time'] = session_df['created_at'].apply(lambda x: min(x))
     session_df.loc[:,'end_time'] = session_df['created_at'].apply(lambda x: max(x))
@@ -172,7 +175,7 @@ if __name__ == '__main__':
     df_question = pd.read_parquet("./data/raw/experiment-2025-q1/ntuecon_experiment_250525/question_structure.parquet")
 
     #conn = duckdb.connect("./data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_book_volume_log.parquet")
-    df_book_vol = pd.read_parquet("./data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_book_volume_log.parquet")
+    df_book_vol = pd.read_parquet("./data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_book_volume_log_2025-06-03.parquet")
 
     #conn = duckdb.connect("./data/raw/experiment-2025-q1/ntuecon_experiment_250525/target_user_answer_log.parquet")
     df_user_ans = pd.read_parquet("./data/raw/experiment-2025-q1/ntuecon_experiment_250603/target_user_answer_log_2025-06-03.parquet")
@@ -206,8 +209,8 @@ if __name__ == '__main__':
     testdfff = manual_translate_book_vol_name_to_book_vol(testdff)
     testdffff = construct_session_id(testdfff)
     testdfffff = agg_sessions(testdffff)
-    testdfffff.to_json('/content/session_data_new.json')
+    testdfffff.to_json('./data/processed/session_data_new.json')
     sample_df = testdfffff.sample(frac=1 / 3, random_state=42)
     #sample_df.to_csv('./data/processed/sample_session_data.csv')
-    testdffff.to_json('/content/question_data_new.json')
+    testdffff.to_json('./data/processed/question_data_new.json')
     print('finish')
