@@ -63,8 +63,9 @@ def extend_answer_df(ans_df: pd.DataFrame,user_df: pd.DataFrame, exp_df: pd.Data
     return df
 def filter_exp_data(df:pd.DataFrame, grade:int = 5, subject:str = "數學", vol_name:str = '五', course_ids=None):
 
-    grade_mask = df['user_grade'] == grade
     session_mask = pd.Series(True,index=df.index)
+    grade_mask = pd.Series(True,index=df.index) if grade is None else df['user_grade'] == grade
+
     if course_ids is None:
         pass
     else:
@@ -162,7 +163,7 @@ def agg_sessions(df:pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == '__main__':
-    #os.chdir('/Users/eric/Documents/SchoolCourses/PaGamO')
+    os.chdir('/Users/eric/Documents/SchoolCourses/PaGamO')
 
     """
     conn = duckdb.connect(
